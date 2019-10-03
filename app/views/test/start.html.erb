@@ -1,6 +1,6 @@
 <h1>Let us start this off</h1>
 <%= form_with(url: "/search", method: "get", local: true) do %>
 	<div><%= label_tag ("Break this down: ")%>
-	<%= text_field_tag (:bcode) %></div>
+	<%= text_field_tag :bcode,'', autofocus: true %></div>
 	<%= submit_tag ("Search") %>
 <% end %>
