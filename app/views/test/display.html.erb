@@ -1,0 +1,11 @@
+<% if @code %>
+	<h1>You searched for</h1>
+	<h2>The test code is <%= @code[5...9] %>, which is for <%= @code[9...14] %></h2>
+	<h2>The expiry date of this bottle is <%= @code[14...16]+' month & year: 20'+@code[16...18] %></h2>
+	<h3>The lot number of this bottle is <%= @code[28...36] %></h3>
+	<a href="/">
+		<button type="button" autofocus>Try another one</button>
+	</a>
+<% else %>
+	<h2>Lets try again</h2>
+<% end %>
